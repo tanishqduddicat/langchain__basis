@@ -1,0 +1,23 @@
+---------------------------------------------------------rag1_part_1.py---------------------------------------------------
+
+Responsible for loading a single pdf from books dir and storing them in the vector store after converting the chunks into 
+embeddings.
+
+------------------------------------------------------------rag2_part1.py-----------------------------------------
+
+Responsible for loading the all the pdfs from books dir and storing them in the vector store after converting the chunks into 
+embeddings.
+
+we are also going to be adding the metadata: in this case the source of the doucment is also added to each induvidual chunk so that the
+user can proof check if needed when the chunks are retrieved once the user prompt is passed as input.
+
+-----------------------------------------------------rag1_part2.py and rag_2part2.py-----------------------------------------
+
+Responsible for fetching the relevant documents from the already created vector store by asking a user query. we will be using the vector store as 
+a retriever and would invoke it by passing in the user query as the input.
+
+----------------------------------------------------------embeddings.py--------------------------------------------------------
+
+Demonstrates different embedding models could be used when storing in vector store.
+
+
